@@ -1,0 +1,5 @@
+healthcheck:
+    path: /healthcheck
+    method: GET
+    status: 200
+    match: working
