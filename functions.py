@@ -295,7 +295,7 @@ def inserir_regra_L7(user,ip,regra):
         else:
             dic_regra = {}      
             dic_regra["vsys"] = settings.FW_HOST
-            dic_regra["device"] = "fw-pa-dc-rj-11"
+            dic_regra["device"] = "mypaloalto"
             dic_regra["source"] = {}
             dic_regra["source"]["zone"] = settings.SOURCEZONE
             dic_regra["source"]["address"] = regra["source"]
@@ -404,7 +404,7 @@ def inserir_regra_L7(user,ip,regra):
             stderror_logger.error("""app='TZION',source='%s',username='%s',action='insert',status='Error',reason='Rule %s not implemented because it was not possible to communicate with the Firewall.'""",ip,user,regra["name"])
             return JSONEncoder().encode({"Error":"Can not insert the object: %s on Firewall"})%(hosts_will_add)
         dic_regra["vsys"] = settings.FW_HOST
-        dic_regra["device"] = "fw-pa-dc-rj-11"
+        dic_regra["device"] = "mypaloalto"
         dic_regra["source"] = {}
         dic_regra["source"]["zone"] = settings.SOURCEZONE
         dic_regra["source"]["address"] = regra["source"]
@@ -602,7 +602,7 @@ def inserir_regra(user,ip,regra):
             stderror_logger.error("""app='TZION',source='%s',username='%s',action='insert',status='Error',reason='Rule %s not updated with element(s) %s'""",ip,user,regra["name"],hosts_will_add)
             return JSONEncoder().encode({"Error":"Could not insert the object(s): %s in Firewall"})%(hosts_will_add)
         dic_regra["vsys"] = settings.FW_HOST
-        dic_regra["device"] = "fw-pa-dc-rj-11"
+        dic_regra["device"] = "mypaloalto"
         dic_regra["source"] = {}
         dic_regra["source"]["zone"] = settings.SOURCEZONE
         dic_regra["source"]["address"] = regra["source"]
