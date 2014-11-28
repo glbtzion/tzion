@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-from flask import request, app, Flask, url_for, json
+from flask import redirect, request, app, Flask, url_for, json
 from functions import *
 from commit_control import *
 from json_valid import *
@@ -18,6 +18,10 @@ class JSONEncoder(json.JSONEncoder):
 
 app = Flask(__name__)
 app.debug = settings.DEBUG
+
+@app.route('/', methods = ['GET'])
+def home():
+    return redirect("http://tzion-doc.mycompany.com")
 
 @app.route('/healthcheck', methods = ['GET'])
 def healthcheck():

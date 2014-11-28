@@ -8,6 +8,6 @@ tzion is an api to automate policies creation into Palo Alto firewalls. With tzi
 
 Links:
 
-- Repository & Issue Tracker: https://github.com/leomauricio/tzion
+- Repository & Issue Tracker: https://github.com/glbtzion/tzion
 - Full Documentation: 
 - How to Contribute:
