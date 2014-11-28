@@ -1,5 +1,5 @@
 # Bem vindo ao tzion
-
+#
 ####Estrutura do Tzion
 
 O **tzion** é fruto do primero esforço de desenvolvimento de alguns dos Analistas do time Suporte Segurança da GLB. Ou seja, não somos desenvolvedores, somos apenas *scripteiros* que resolveram brincar de fazer uma api, usando **Flask** (http://www.fullstackpython.com/flask.html) e **MongoDB** (http://www.mongodb.org/) para permitir que um determinado grupo de usuários consiga consultar e alterar regras dentro de um Firewall (FW) Palo Alto, sem que seja necessário logar no equipamento para fazer uso de sua gui. Por esse motivo, obviamente, acreditamos que a *qualidade do código* certamente será questionada por qualquer pythonista de plantão. **Sugestões e melhorias podem ser enviadas através do https://github.com/glbtzion/tzion**
